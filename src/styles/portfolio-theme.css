@@ -1,0 +1,178 @@
+html[data-theme="light"] {
+  color-scheme: light;
+  --ink: #edf1e8;
+  --surface: #f8faf4;
+  --surface-2: #e2e9db;
+  --paper: #17211e;
+  --muted: #57655f;
+  --accent: #526721;
+  --light: #e1e8d7;
+  --line: #c5cfbd;
+  --light-line: #bac7ae;
+}
+
+html[data-theme="light"] body { background: var(--ink); color: var(--paper); }
+html[data-theme="light"] ::selection { background: #627e2d; color: #fff; }
+html[data-theme="light"] :focus-visible { outline-color: #526721; }
+html[data-theme="light"] .site-header { background: #edf1e8f5; border-color: #c5cfbd; }
+html[data-theme="light"] .site-footer { background: #e7eddf; color: #57655f; }
+html[data-theme="light"] .mobile-menu { background: #edf1e8; color: #17211e; }
+html[data-theme="light"] .mobile-links a { border-color: #c5cfbd; }
+html[data-theme="light"] .button-light { border-color: #859578; color: #17211e; }
+html[data-theme="light"] .button-light:hover { background: #526721; color: #fff; }
+html[data-theme="light"] .sharing,
+html[data-theme="light"] .case-context,
+html[data-theme="light"] .case-research { color: #17211e; }
+html[data-theme="light"] .case-study[data-project="bridge"],
+html[data-theme="light"] .case-study[data-project="logistics-assistant"] { --case-color: #315b73; }
+html[data-theme="light"] .case-study[data-project="badhabinot"] { --case-color: #8e4d3c; }
+html[data-theme="light"] .case-planned h3,
+html[data-theme="light"] .case-plan-list li,
+html[data-theme="light"] .case-plan-list li::marker { color: #315b73; }
+html[data-theme="light"] .case-plan-list { border-color: #91a5ac; }
+html[data-theme="light"] .case-plan-list li { border-color: #91a5ac; }
+html[data-theme="light"] .architecture-map { --architecture-planned: #315b73; }
+html[data-theme="light"] .architecture-map--bridge,
+html[data-theme="light"] .architecture-map--mailops { --architecture-accent: #315b73; }
+html[data-theme="light"] .architecture-map--badhabinot { --architecture-accent: #8e4d3c; }
+html[data-theme="light"] .architecture-art { background: radial-gradient(ellipse at 50% 50%, #c4d3bf66, transparent 70%); }
+/* These illustrations retain their original product colors as framed artwork. */
+html[data-theme="light"] .case-scene { background: #142019; border-radius: 8px; }
+
+html[data-theme="light"] .project-overlay-backdrop { --overlay-accent: #526721; background: #c9d3c9bd; }
+html[data-theme="light"] .project-overlay-blue { --overlay-accent: #315b73; }
+html[data-theme="light"] .project-overlay-coral { --overlay-accent: #8e4d3c; }
+html[data-theme="light"] .project-overlay-neutral { --overlay-accent: #556d35; }
+html[data-theme="light"] .project-overlay-dialog { background: #f7f9f1; color: #17211e; border-color: #a9b79f; box-shadow: 0 30px 100px #23392030; }
+html[data-theme="light"] .project-overlay-topbar { background: #eff4e8; border-color: #c5cfbd; }
+html[data-theme="light"] .project-overlay-topbar > span { color: #53624a; }
+html[data-theme="light"] .project-overlay-close { color: #344331; }
+html[data-theme="light"] .project-overlay-close:hover { color: var(--overlay-accent); }
+html[data-theme="light"] .project-overlay-scroll { scrollbar-color: #849570 #eef3e6; }
+html[data-theme="light"] .project-overlay-hero,
+html[data-theme="light"] .project-overlay-implementation,
+html[data-theme="light"] .project-overlay-stack,
+html[data-theme="light"] .project-overlay-sharing { border-color: #c5cfbd; }
+html[data-theme="light"] .project-overlay-visual { background: radial-gradient(ellipse at 50% 35%, #cad9b675, transparent 75%), #edf3e5; border-color: #c5cfbd; }
+html[data-theme="light"] .project-overlay-visual-bridge { background: radial-gradient(ellipse at 50% 35%, #c6dce477, transparent 75%), #edf3f0; }
+html[data-theme="light"] .project-overlay-visual-badhabinot { background: radial-gradient(ellipse at 50% 35%, #ecd2c675, transparent 75%), #f6eee7; }
+html[data-theme="light"] .project-overlay-visual figcaption { color: #596951; border-color: #b6c5a2; }
+html[data-theme="light"] .project-overlay-intro > p,
+html[data-theme="light"] .project-overlay-body p { color: #53624a; }
+html[data-theme="light"] .project-overlay-status { color: #5c6b51; }
+html[data-theme="light"] .project-overlay-actions a { color: #34432e; border-color: #8a9d76; }
+html[data-theme="light"] .project-overlay-actions a:hover { color: var(--overlay-accent); }
+html[data-theme="light"] .project-overlay-actions .project-overlay-primary { color: #fff; background: var(--overlay-accent); }
+html[data-theme="light"] .project-overlay-actions .project-overlay-primary:hover { color: #fff; background: #34451d; }
+html[data-theme="light"] .project-overlay-features li { color: #43533c; border-color: #d0dac5; }
+html[data-theme="light"] .project-overlay-planned { border-color: #96aa7c; }
+html[data-theme="light"] .project-overlay-planned ul { color: #54674a; }
+html[data-theme="light"] .project-overlay-stack > div > span { color: #46583b; border-color: #b6c5a6; background: #edf3e6; }
+html[data-theme="light"] .project-overlay-sharing p { color: #586d4a; }
+html[data-theme="light"] .project-overlay-visual > .scene-svg text { fill: #445448; }
+html[data-theme="light"] .project-overlay-visual .participant > path:first-child,
+html[data-theme="light"] .project-overlay-visual .shared-frame > path:first-child,
+html[data-theme="light"] .project-overlay-visual .message-stream > path:first-child,
+html[data-theme="light"] .project-overlay-visual .ambient-message > path:first-child { fill: #dfe9e5; }
+html[data-theme="light"] .project-overlay-flow g[fill="#101417"] { fill: #f1f6e9; }
+html[data-theme="light"] .project-overlay-flow text { fill: #4a6141; }
+
+html[data-theme="light"] .about-nest-backdrop { background: #c9d3c9b8; }
+html[data-theme="light"] .about-nest-panel { background: radial-gradient(ellipse at 82% 8%, #d4e0bc88, transparent 48%), #f5f8ee; color: #17211e; border-color: #95aa7a; box-shadow: 0 30px 100px #23392030; }
+html[data-theme="light"] .about-nest-heading { border-color: #c5cfbd; }
+html[data-theme="light"] .about-nest-heading h2,
+html[data-theme="light"] .about-nest-close,
+html[data-theme="light"] .about-nest-location,
+html[data-theme="light"] .about-nest-role { color: #526b35; }
+html[data-theme="light"] .about-nest-close:hover { background: #dde8cf; color: #385317; }
+html[data-theme="light"] .about-nest-panel :focus-visible { outline-color: #526721; }
+html[data-theme="light"] .about-nest-ornament,
+html[data-theme="light"] .about-nest-content h3 > span { color: #526721; }
+html[data-theme="light"] .about-nest-biography { color: #53654a; }
+html[data-theme="light"] .about-nest-focus > div { border-color: #c5cfbd; }
+html[data-theme="light"] .about-nest-focus dt { color: #2e4227; }
+html[data-theme="light"] .about-nest-focus dt > span,
+html[data-theme="light"] .about-nest-focus dd,
+html[data-theme="light"] .about-nest-focus i { color: #5c7348; }
+html[data-theme="light"] .about-nest-actions .about-nest-contact { background: #526721; color: #fff; }
+html[data-theme="light"] .about-nest-actions .about-nest-contact:hover { background: #34451d; }
+html[data-theme="light"] .about-nest-actions a:not(.about-nest-contact),
+html[data-theme="light"] .about-nest-links a { color: #4a6331; border-color: #9bae83; }
+html[data-theme="light"] .about-nest-actions a:not(.about-nest-contact):hover,
+html[data-theme="light"] .about-nest-links a:hover { color: #2e4815; }
+html[data-theme="light"] .about-nest-projects .project-identities a,
+html[data-theme="light"] .about-nest-projects .identity-arrow { color: #526548; }
+html[data-theme="light"] .about-nest-projects .project-identities a:hover,
+html[data-theme="light"] .about-nest-projects .identity-arrow:hover { color: #293e18; }
+html[data-theme="light"] .about-nest-projects .project-identity-wrap { border-color: #c5cfbd; }
+
+html[data-theme="light"] .operations-console {
+  --ops-lime: #526721;
+  --ops-blue: #3d6e9c;
+  --ops-orange: #a45327;
+  --ops-text: #243427;
+  --ops-muted: #5e705e;
+  --ops-line: #c1cfb5;
+  background: #edf3e7;
+}
+html[data-theme="light"] .ops-header { background: linear-gradient(120deg, #e2eccf, #f2f7eb 65%); }
+html[data-theme="light"] .ops-demo-badge { border-color: #aebf99; background: #e2edcf; color: #4b6231; }
+html[data-theme="light"] .ops-tabs button:hover { background: #e1ebd5; }
+html[data-theme="light"] .ops-tabs button[aria-selected="true"] { background: #dbe7c9; border-color: #9bb77a; }
+html[data-theme="light"] .ops-map-main { background: radial-gradient(ellipse at 65% 40%, #e4ecd9, #f1f6eb 70%); }
+html[data-theme="light"] .ops-map-meta,
+html[data-theme="light"] .ops-map-meta > span:last-child,
+html[data-theme="light"] .ops-map-legend,
+html[data-theme="light"] .ops-view-note { color: #51694e; }
+html[data-theme="light"] .ops-ocean-label { fill: #5d7760; }
+html[data-theme="light"] .ops-world-land { fill: #d2dfc6; stroke: #607854; stroke-opacity: .65; }
+html[data-theme="light"] .ops-map-dot { fill: #57734d; }
+html[data-theme="light"] .ops-hub-label { fill: #314a34; stroke: #f1f6eb; }
+html[data-theme="light"] .ops-hub-label.is-active { fill: #334a18; }
+html[data-theme="light"] .ops-map-scale { fill: #5d7553; }
+html[data-theme="light"] .ops-map-scale path { stroke: #5d7553; }
+html[data-theme="light"] .ops-route-selected path { stroke: #526721; }
+html[data-theme="light"] .ops-route-muted path { stroke: #3d6e9c; stroke-opacity: .6; }
+html[data-theme="light"] .ops-route-risk path { stroke: #a45327; stroke-opacity: .85; }
+html[data-theme="light"] .ops-hubs circle[fill="#101719"] { fill: #edf3e7; }
+html[data-theme="light"] .ops-hubs circle[stroke="#D7FF64"] { stroke: #526721; }
+html[data-theme="light"] .ops-hubs circle[fill="#D7FF64"] { fill: #526721; }
+html[data-theme="light"] .ops-hubs circle[stroke="#94ADBF"] { stroke: #3d6e9c; }
+html[data-theme="light"] .ops-hubs circle[fill="#94ADBF"] { fill: #3d6e9c; }
+html[data-theme="light"] .ops-hubs circle[stroke="#F8A267"],
+html[data-theme="light"] .ops-risk-halo circle[stroke] { stroke: #a45327; }
+html[data-theme="light"] .ops-hubs circle[fill="#F8A267"],
+html[data-theme="light"] .ops-risk-halo circle[fill="#F8A267"] { fill: #a45327; }
+html[data-theme="light"] .ops-hubs rect { fill: #dcebd8; stroke: #67906a; }
+html[data-theme="light"] .ops-data-check,
+html[data-theme="light"] .ops-legend-check { fill: #3c7045; color: #3c7045; }
+html[data-theme="light"] .ops-shipment-panel { background: #e8efdf; }
+html[data-theme="light"] .ops-status { background: #dceacd; color: #4c662a; border-color: #aec792; }
+html[data-theme="light"] .ops-status--risk { background: #f4e2d2; color: #9a4e24; border-color: #d9b99b; }
+html[data-theme="light"] .ops-itinerary strong,
+html[data-theme="light"] .ops-freight-mode,
+html[data-theme="light"] .ops-shipment-details dd small,
+html[data-theme="light"] .ops-progress-label { color: #58704f; }
+html[data-theme="light"] .ops-shipment-details dd { color: #2c4126; }
+html[data-theme="light"] .ops-progress-track { background: #c5d5b6; }
+html[data-theme="light"] .ops-insight { background: #e0edcf; border-color: #acc68b; }
+html[data-theme="light"] .ops-insight strong { color: #456329; }
+html[data-theme="light"] .ops-insight p { color: #587348; }
+html[data-theme="light"] .ops-insight--risk { background: #f5e8db; border-color: #dbb991; }
+html[data-theme="light"] .ops-insight--risk strong,
+html[data-theme="light"] .ops-insight--risk .ops-insight-icon { color: #9b4d20; }
+html[data-theme="light"] .ops-insight--risk p { color: #805938; }
+html[data-theme="light"] .ops-insight--data { background: #dcebd8; border-color: #abc6a0; }
+html[data-theme="light"] .ops-insight--data strong,
+html[data-theme="light"] .ops-insight--data .ops-insight-icon { color: #426f3d; }
+html[data-theme="light"] .ops-route-selector button { background: #eef4e8; color: #586f4f; }
+html[data-theme="light"] .ops-route-selector button:hover { background: #e1ecd4; color: #344a28; }
+html[data-theme="light"] .ops-route-selector button[aria-pressed="true"] { background: #dfeccd; color: #526721; }
+html[data-theme="light"] .ops-route-selector i,
+html[data-theme="light"] .ops-route-button-id,
+html[data-theme="light"] .ops-kpis > div > span,
+html[data-theme="light"] .ops-kpis small { color: #58704f; }
+html[data-theme="light"] .ops-kpis strong { color: #2e4626; }
+html[data-theme="light"] .ops-kpis strong.ops-risk-number { color: #a45327; }
+html[data-theme="light"] .ops-footer { color: #5c7253; background: #e1ebd7; }
+html[data-theme="light"] .ops-footer > span:first-child { color: #4e683f; }

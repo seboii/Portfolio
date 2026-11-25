@@ -1,0 +1,101 @@
+.web-creature {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+  color: #d7ff64;
+  --creature-accent: #d7ff64;
+  --creature-edge: #668399;
+  --creature-leg-edge: #8da9ba;
+  --creature-wing-edge: #c1deec;
+  filter: drop-shadow(0 6px 8px #0009);
+}
+.web-creature .web-spider-pose {
+  transform-box: view-box;
+  transform-origin: 110px 110px;
+  animation: web-spider-sway 5.8s ease-in-out infinite;
+  --spider-turn: 0deg;
+}
+.web-creature--look-left .web-spider-pose { --spider-turn: 11deg; }
+.web-creature--look-right .web-spider-pose { --spider-turn: -11deg; }
+.web-creature--look-down .web-spider-pose { --spider-turn: 0deg; }
+.web-creature .web-spider-body {
+  transform-box: view-box;
+  transform-origin: 110px 106px;
+  animation: web-spider-breathe 3.8s ease-in-out infinite;
+}
+.web-creature .web-spider-leg {
+  transform-box: view-box;
+  transform-origin: var(--leg-pivot, 110px 110px);
+  animation: web-spider-leg-a 3.3s ease-in-out infinite;
+  animation-delay: var(--leg-delay, 0s);
+}
+.web-creature .web-spider-leg--b { animation-name: web-spider-leg-b; }
+.web-creature .web-spider-aura { animation: web-spider-aura 4.8s ease-in-out infinite; }
+.web-creature--active .web-spider-leg { animation-duration: 1.9s; }
+.web-creature--active .web-spider-aura { animation-duration: 2s; }
+.web-creature .web-fly-body {
+  transform-box: view-box;
+  transform-origin: 75px 76px;
+  animation: web-fly-hover 3.1s ease-in-out infinite;
+}
+.web-creature .web-fly-wing {
+  transform-box: view-box;
+  animation: web-fly-wing-left .32s ease-in-out infinite alternate;
+}
+.web-creature .web-fly-wing--left { transform-origin: 72px 80px; }
+.web-creature .web-fly-wing--right { transform-origin: 78px 80px; animation-name: web-fly-wing-right; animation-delay: -.1s; }
+.web-creature .web-fly-leg {
+  transform-box: view-box;
+  transform-origin: 75px 75px;
+  animation: web-fly-leg 2.3s ease-in-out infinite;
+  animation-delay: var(--leg-delay, 0s);
+}
+.web-creature .web-fly-leg--b { animation-direction: reverse; }
+.web-creature--active .web-fly-wing { animation-duration: .16s; }
+.web-creature--active .web-fly-body { animation-duration: 1.7s; }
+.widow-hourglass { filter: drop-shadow(0 0 3px #ef405455); }
+.web-creature--active .widow-hourglass { filter: drop-shadow(0 0 5px #ef405490); }
+.web-fly-led { filter: drop-shadow(0 0 2px var(--creature-accent)); }
+
+@keyframes web-spider-sway {
+  0%, 100% { transform: translateY(0) rotate(calc(var(--spider-turn) - 1.5deg)); }
+  50% { transform: translateY(2.5px) rotate(calc(var(--spider-turn) + 1.5deg)); }
+}
+@keyframes web-spider-breathe {
+  0%, 100% { transform: scale(1, 1); }
+  50% { transform: scale(1.02, .98); }
+}
+@keyframes web-spider-leg-a {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2.5deg); }
+}
+@keyframes web-spider-leg-b {
+  0%, 100% { transform: rotate(2deg); }
+  50% { transform: rotate(-2.5deg); }
+}
+@keyframes web-spider-aura { 0%, 100% { opacity: .5; } 50% { opacity: 1; } }
+@keyframes web-fly-hover {
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-3px) rotate(2deg); }
+}
+@keyframes web-fly-wing-left {
+  0% { transform: rotate(-5deg) scaleX(1); }
+  100% { transform: rotate(8deg) scaleX(.85); }
+}
+@keyframes web-fly-wing-right {
+  0% { transform: rotate(5deg) scaleX(1); }
+  100% { transform: rotate(-8deg) scaleX(.85); }
+}
+@keyframes web-fly-leg {
+  0%, 100% { transform: rotate(-1.5deg); }
+  50% { transform: rotate(2deg); }
+}
+
+html[data-motion="reduce"] .web-creature,
+html[data-motion="reduce"] .web-creature * { animation: none; }
+@media (prefers-reduced-motion: reduce) {
+  html:not([data-motion="full"]) .web-creature,
+  html:not([data-motion="full"]) .web-creature * { animation: none; }
+}

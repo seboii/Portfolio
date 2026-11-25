@@ -1,0 +1,25 @@
+node_modules/
+dist/
+.prerender/
+build/
+.cache/
+.env*
+!.env.example
+!.env.docker.example
+.secrets/
+.vite/
+vite.config.*.timestamp-*
+*.tsbuildinfo
+*-debug.log*
+logs/
+*.log
+.tmp-*
+/.figma/design-context/
+
+# Local editor settings, notes, and QA artifacts.
+/.idea/
+/CONTENT_GAPS.md
+/screenshots/
+/docs/*
+!/docs/motion-system.md
+!/docs/research-sources.md

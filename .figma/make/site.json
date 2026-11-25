@@ -1,0 +1,17 @@
+{
+  "title": "Şehabettin Şamşiev — Bilgisayar Mühendisi | Full-Stack Developer",
+  "description": "Gerçek zamanlı uygulamalar, operasyon platformları, backend ve full-stack geliştirme üzerine mühendislik portfolyosu.",
+  "language": "tr",
+  "icons": { "icon": "/favicon.svg" },
+  "openGraph": { "image": "/share-image.png" },
+  "analytics": {
+    "googleAnalyticsId": "G-8M9VDNLV20"
+  },
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
